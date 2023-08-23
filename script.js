@@ -13,10 +13,11 @@ class Products {
   async getProducts() {
     try {
       let result = await fetch(
-        "https://61afbc6c3e2aba0017c494ef.mockapi.io/products"
+       " https://64e373e6bac46e480e78d533.mockapi.io/products"
       );
       let data = await result.json();
       let products = data;
+      //console.log(products)
       return products;
     } catch (error) {
       console.log(error);
